@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Inicio de Sesión</title>
+  <!-- Agrega la referencia a Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-top: 50px;
+    }
+    .form-control {
+      border-radius: 5px;
+    }
+    .btn-primary {
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <div class="col-md-6">
+      <h2 class="mb-4 text-center">Inicio de Sesión</h2>
+      
+      <form>
+        <!-- Nombre de Usuario o Correo Electrónico -->
+        <div class="mb-3">
+          <label for="username" class="form-label">Nombre de Usuario o Correo Electrónico:</label>
+          <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña:</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+
+        <!-- Botones -->
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </div>
+          <a href="/usuario" type="submit" >Registro</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Agrega la referencia a Bootstrap JS y Popper.js (necesarios para ciertas funciones de Bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
